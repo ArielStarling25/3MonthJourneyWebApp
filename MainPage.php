@@ -80,7 +80,9 @@
         </div>
     </div>
     <div class="tailDiv">
-
+        <button class = "dataInsBtn">
+            <a href="DataInsert.php">Data Insert Page</a>
+        </button>
     </div>
     <script src="JS/MainPage.js"></script>
 </body>
