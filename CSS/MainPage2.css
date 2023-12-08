@@ -1,0 +1,240 @@
+/* --- Below is for bodyDiv ---*/
+
+.leftScrollerTitle {
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 5px 5px 10px black;
+  padding: 10px;
+  margin-top: 900px;
+  z-index: 1;
+  opacity: 0.1;
+
+  &:nth-child(1) {
+    font-family: "Times New Roman";
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+.leftScrollerTitle.fadeIn {
+  transition: 1.5s;
+  margin-top: 50px !important;
+  opacity: 1;
+}
+
+.leftScroller {
+  width: calc(100% - 200px);
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightskyblue;
+  border-radius: 30px;
+  opacity: 0;
+  margin-top: 600px;
+  box-shadow: 5px 5px 10px black;
+  padding: 50px;
+  z-index: 2;
+}
+
+.leftScroller:active {
+  box-shadow: 0px 0px 0px black;
+}
+
+.leftScroller.fadeIn {
+  transition: 2s;
+  margin-top: 50px !important;
+  opacity: 0.7;
+}
+
+.leftScroller ol {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  overflow-wrap: break-word;
+  background-color: dimgray;
+  height: fit-content;
+}
+
+.leftScroller li {
+  float: left;
+  height: fit-content;
+}
+
+.leftScroller li a {
+  display: block;
+  color: aliceblue;
+  padding: 16px;
+  margin: 10px;
+  text-decoration: none;
+  height: fit-content;
+}
+
+.leftScroller button {
+  display: block;
+  background-color: lightslategray;
+  height: 90px;
+  width: 140px;
+  border-radius: 20px;
+  border: 2px solid darkgrey;
+  color: black;
+  text-align: center;
+  font-size: large;
+  font-family: "Times New Roman";
+  padding: 10px;
+  margin: 10px;
+  transition: 1s;
+  overflow-y: auto;
+  margin-top: 70px;
+  opacity: 0.4;
+}
+
+.leftScroller button p {
+  &:nth-child(1) {
+    font-size: large;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    font-size: medium;
+    font-size: 0%;
+    opacity: 0;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    color: #7a7a7a;
+    font-size: 0%;
+    opacity: 0;
+    position: relative;
+  }
+}
+
+.leftScroller button:active {
+  transition: 0.1s;
+  margin-top: 10px;
+}
+
+.leftScroller button:hover {
+  height: 110px;
+  width: 170px;
+  background-color: lightgray;
+}
+
+/* ------------- Node 1 ------------- */
+.Node1.floatUp {
+  transition: 1s;
+  transition-delay: 0.2s;
+  margin-top: 0px;
+  opacity: 1 !important;
+}
+
+.Node1.growContent {
+  transition: 2s;
+  border: 3px solid black;
+  background-image: linear-gradient(0deg, #d4d4d4, rgb(171, 212, 253));
+  box-shadow: 5px 5px 10px black;
+  text-align: left;
+  height: 450px !important;
+  width: 500px !important;
+}
+
+.Node1.growContent p {
+  &:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    font-size: medium;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: small;
+    position: relative;
+  }
+}
+
+/* ------------- Node 2 ------------- */
+.Node2.floatUp {
+  transition: 1s;
+  transition-delay: 0.4s;
+  margin-top: 0px;
+  opacity: 1 !important;
+}
+
+.Node2.growContent {
+  transition: 2s;
+  border: 3px solid black;
+  background-image: linear-gradient(0deg, #d4d4d4, rgb(171, 212, 253));
+  box-shadow: 5px 5px 10px black;
+  text-align: left;
+  height: 450px !important;
+  width: 500px !important;
+}
+
+.Node2.growContent p {
+  &:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    font-size: medium;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: small;
+    position: relative;
+  }
+}
+
+/* ------------- Node 3 ------------- */
+.Node3.floatUp {
+  transition: 1s;
+  transition-delay: 0.6s;
+  margin-top: 0px;
+  opacity: 1 !important;
+}
+
+.Node3.growContent {
+  transition: 2s;
+  border: 3px solid black;
+  background-image: linear-gradient(0deg, #d4d4d4, rgb(171, 212, 253));
+  box-shadow: 5px 5px 10px black;
+  text-align: left;
+  height: 450px !important;
+  width: 500px !important;
+}
+
+.Node3.growContent p {
+  &:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    font-size: medium;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: small;
+    position: relative;
+  }
+}

@@ -1,0 +1,55 @@
+html {
+  background-color: aliceblue;
+}
+
+.formTitle {
+  margin-left: auto;
+  margin-right: auto;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 170px;
+  background-color: azure;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 40px;
+  border: 4px solid darkcyan;
+}
+
+.formTitleIn {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+
+  &:nth-child(1) {
+    text-align: center;
+    font-size: larger;
+    font-family: "Times New Roman";
+  }
+}
+
+.formBox {
+  height: fit-content;
+  padding: 50px;
+  width: 400px;
+  background-color: azure;
+  border: 3px solid darkcyan;
+  border-radius: 35px;
+}
+
+textarea#weekSummary {
+  height: 200px;
+  width: 400px;
+}
+
+.formResults {
+  height: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:nth-child(1) {
+    text-align: center;
+    color: grey;
+  }
+}
