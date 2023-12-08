@@ -5,6 +5,9 @@ var bodyScrollTitle = document.getElementsByClassName("leftScrollerTitle")[0];
 var dataInsLink = document.getElementsByClassName("dataInsDiv")[0];
 var dataInsBtn = document.getElementsByClassName("dataInsBtn")[0];
 
+//PS: where it shows ==/ they are places where it should be updated when a new node is added
+
+//Array holding node element objects ==/
 const nodes = [
   document.getElementsByClassName("Node1")[0],
   document.getElementsByClassName("Node2")[0],
@@ -27,13 +30,14 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
   }
 };
 
-//Array holding names of each week node
+//Array holding names of each week node ==/
 const nodesNames = ["Node1", "Node2", "Node3", "Node4"];
 let nodeState = [];
 for (let i = 0; i < nodesNames.length; i++) {
   nodeState.push(false);
 }
 
+//Add another case here in case of new node ==/
 function contentGrowth(nd) {
   switch (nd) {
     case "nd1":
@@ -78,6 +82,7 @@ function contentGrowth(nd) {
   }
 }
 
+//event listeners for each node ==/
 document.getElementsByClassName("Node1")[0].onclick = function () {
   contentGrowth(this.value);
 };
