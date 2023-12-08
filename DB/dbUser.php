@@ -112,9 +112,9 @@
     function displayData($retrivedData){
         if($retrivedData != null){
             foreach($retrivedData as $dataEntry){
-                foreach($dataEntry as $dataKey => $data){
-                    echo $data . '<br>';
-                }
+                echo "Week start date: " . $dataEntry['WeekStartDate'] . "<br>";
+                echo "----------------------------------<br>";
+                echo $dataEntry['WeekSummary'] . "<br>";
             }
         }
         else{
