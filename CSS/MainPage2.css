@@ -86,7 +86,7 @@
   margin: 10px;
   transition: 1s;
   overflow-y: auto;
-  margin-top: 70px;
+  margin-top: 150px;
   opacity: 0.4;
 }
 
@@ -219,6 +219,45 @@
 }
 
 .Node3.growContent p {
+  &:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    font-size: medium;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: small;
+    position: relative;
+  }
+}
+
+/* ------------- Node 4 ------------- */
+.Node4.floatUp {
+  transition: 1s;
+  transition-delay: 0.8s;
+  margin-top: 0px;
+  opacity: 1 !important;
+}
+
+.Node4.growContent {
+  transition: 2s;
+  border: 3px solid black;
+  background-image: linear-gradient(0deg, #d4d4d4, rgb(171, 212, 253));
+  box-shadow: 5px 5px 10px black;
+  text-align: left;
+  height: 450px !important;
+  width: 500px !important;
+}
+
+.Node4.growContent p {
   &:nth-child(1) {
     font-size: larger;
     font-weight: bold;
