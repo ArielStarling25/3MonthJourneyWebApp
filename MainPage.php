@@ -81,10 +81,12 @@
         </div>
     </div>
     <div class="tailDiv">
-        <div class="dataInsBtn">
-            <div>
-                <a href="DataInsert.php">Data Insert Page</a>
-            </div>
+        <div class="dataInsDiv">
+                <a href="DataInsert.php">
+                    <button class="dataInsBtn">
+                        Data Insert
+                    </button>
+                </a>
         </div>
     </div>
     <script src="JS/MainPage.js"></script>

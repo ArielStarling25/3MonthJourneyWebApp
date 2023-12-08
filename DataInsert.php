@@ -62,6 +62,11 @@
             </form>
         </div>
     </div>
+    <div class="returnBtn">
+        <a href="MainPage.php">
+            <button>Return to Main Page</button>
+        </a>
+    </div>
     <div class="formResults">
         <?php
             $passCounter = 0;

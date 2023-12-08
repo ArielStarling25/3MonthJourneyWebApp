@@ -1,32 +1,62 @@
 /* This is for the TailDiv */
-.dataInsBtn {
-  height: 40px;
-  background-color: lightskyblue;
-  width: 140px;
+.dataInsDiv {
+  height: fit-content;
+  width: fit-content;
   margin-top: 900px;
   margin-left: 50px !important;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px black;
   text-align: center;
   opacity: 0;
 }
 
-.dataInsBtn.fadeIn {
+.dataInsDiv.fadeIn {
   transition: 2.5s;
   margin-top: 500px;
   opacity: 1 !important;
 }
 
-.dataInsBtn div {
+.dataInsBtn {
+  height: 50px;
+  width: 150px;
+  background-color: lightskyblue;
+  border-radius: 100px;
+  border: 2px solid gray;
+  box-shadow: 3px 3px 8px darkgrey;
+  font-family: "Times New Roman";
+  font-size: medium;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.dataInsBtn.fadeIn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.dataInsBtn:hover {
+  width: 160px;
+  height: 60px;
+  margin-left: -5px;
+  background-color: aliceblue;
+}
+
+.dataInsBtn:active {
+  margin-top: 10px;
+}
+
+/*
+.dataInsDiv div {
   height: fit-content;
   width: fit-content;
   margin-top: 10px !important;
   margin-left: auto;
   margin-right: auto;
 }
+*/
 
+/*
 .dataInsBtn div a {
   text-decoration: underline;
   color: black;
   margin-top: 10px;
 }
+*/

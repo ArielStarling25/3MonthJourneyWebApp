@@ -7,7 +7,7 @@ html {
   margin-right: auto;
   height: fit-content;
   width: fit-content;
-  margin-top: 170px;
+  margin-top: 150px;
   background-color: azure;
   box-shadow: 5px 5px 10px black;
   border-radius: 40px;
@@ -40,6 +40,11 @@ html {
 textarea#weekSummary {
   height: 200px;
   width: 400px;
+}
+
+.returnBtn {
+  margin-top: 10px;
+  margin-left: 38.5%;
 }
 
 .formResults {
