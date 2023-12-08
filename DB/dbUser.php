@@ -72,7 +72,7 @@
         }
     }
 
-    $journeyDB = new DBSQLiteUser("Journey.db");
+    $journeyDB = new DBSQLiteUser("Data/Journey.db");
 
     function insertData(&$databaseUser, int $week, string $weekDate, string $summary){
         $retrievedMsg = $databaseUser->dbInsertJourneyData($week, $weekDate, $summary);
