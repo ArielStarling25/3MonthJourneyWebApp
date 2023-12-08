@@ -1,5 +1,5 @@
 html {
-  background: azure;
+  background-image: linear-gradient(120deg, azure, rgb(134, 134, 247));
 }
 
 /* --Below is for headDiv--*/
@@ -27,7 +27,7 @@ html {
 /*Colour of the ripple effect*/
 .greyBg {
   background-color: #c2c2c2 !important;
-  background-image: linear-gradient(90deg, #b8b8b8, #7a7a7a);
+  background-image: linear-gradient(90deg, #a9a3fc, #6a74fc);
 }
 
 /*Ripple animation play*/
