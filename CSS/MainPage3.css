@@ -4,7 +4,7 @@
   background-color: lightskyblue;
   width: 140px;
   margin-top: 900px;
-  margin-left: 50px;
+  margin-left: 50px !important;
   border-radius: 10px;
   box-shadow: 5px 5px 10px black;
   text-align: center;
@@ -13,7 +13,6 @@
 
 .dataInsBtn.fadeIn {
   transition: 2.5s;
-  transition-delay: 0;
   margin-top: 500px;
   opacity: 1 !important;
 }
@@ -21,7 +20,7 @@
 .dataInsBtn div {
   height: fit-content;
   width: fit-content;
-  margin-top: 20px;
+  margin-top: 10px !important;
   margin-left: auto;
   margin-right: auto;
 }
