@@ -2,6 +2,7 @@ var titleBox = document.getElementsByClassName("titleBox")[0];
 var ripple = document.getElementsByClassName("rippleAnimContainer")[0];
 var bodyScrollBar = document.getElementsByClassName("leftScroller")[0];
 var bodyScrollTitle = document.getElementsByClassName("leftScrollerTitle")[0];
+var dataInsLink = document.getElementsByClassName("dataInsBtn")[0];
 
 const nodes = [
   document.getElementsByClassName("Node1")[0],
@@ -19,6 +20,7 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
     for (let i = 0; i < nodes.length; i++) {
       nodes[i].classList.add("floatUp");
     }
+    dataInsLink.classList.add("fadeIn");
   }
 };
 

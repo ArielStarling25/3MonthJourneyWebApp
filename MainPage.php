@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/MainPage.css" />
     <link rel="stylesheet" href="CSS/MainPage2.css" />
+    <link rel="stylesheet" href="CSS/MainPage3.css" />
     <title>3MonthJourney</title>
 </head>
 <body>
@@ -80,9 +81,11 @@
         </div>
     </div>
     <div class="tailDiv">
-        <button class = "dataInsBtn">
-            <a href="DataInsert.php">Data Insert Page</a>
-        </button>
+        <div class="dataInsBtn">
+            <div>
+                <a href="DataInsert.php">Data Insert Page</a>
+            </div>
+        </div>
     </div>
     <script src="JS/MainPage.js"></script>
 </body>
