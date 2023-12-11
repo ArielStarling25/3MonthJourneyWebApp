@@ -18,8 +18,10 @@ const nodes = [
   document.getElementsByClassName("Node4")[0],
 ];
 
+//When the starting button is clicked
 document.getElementsByClassName("titleBtn")[0].onclick = function () {
   if (this.value === "begin") {
+    console.log("Start button pressed");
     this.innerHTML = "...";
     titleBox.classList.add("horizTranslate");
     ripple.classList.add("disappear");
@@ -88,17 +90,21 @@ function contentGrowth(nd) {
 
 //event listeners for each node ==/
 document.getElementsByClassName("Node1")[0].onclick = function () {
+  console.log("Week 1 pressed");
   contentGrowth(this.value);
 };
 
 document.getElementsByClassName("Node2")[0].onclick = function () {
+  console.log("Week 2 pressed");
   contentGrowth(this.value);
 };
 
 document.getElementsByClassName("Node3")[0].onclick = function () {
+  console.log("Week 3 pressed");
   contentGrowth(this.value);
 };
 
 document.getElementsByClassName("Node4")[0].onclick = function () {
+  console.log("Week 4 pressed");
   contentGrowth(this.value);
 };
