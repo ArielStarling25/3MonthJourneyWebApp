@@ -28,6 +28,7 @@
         <div class="leftScrollerTitle">
             <h1>Journey of 3 Months</h1>
             <h4>"To improve is to change; to be perfect is to change often" - Winston Churchill</h4>
+            <p>By: Ariel Starling</p>
         </div>
         <div class="leftScroller">
             <ol>
@@ -115,6 +116,9 @@
                     </a>
                 </li>
             </ol>
+        </div>
+        <div class="filler">
+
         </div>
     </div>
     <script src="JS/MainPage.js"></script>

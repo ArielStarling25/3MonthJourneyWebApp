@@ -16,19 +16,22 @@
     text-align: center;
     letter-spacing: 5px;
   }
+}
 
-  &:nth-child(2) {
-    animation-delay: 0.4s;
-    font-family: "Times New Roman";
-    text-align: center;
-    letter-spacing: 2px;
-    color: grey;
-  }
+.leftScrollerTitle h4 {
+  font-family: "Times New Roman";
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.leftScrollerTitle p {
+  font-family: Impact;
+  text-align: center;
 }
 
 .leftScrollerTitle.fadeIn {
   transition: 1.5s;
-  margin-top: 8px !important;
+  margin-top: 0px !important;
   opacity: 1;
 }
 
