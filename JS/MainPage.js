@@ -1,9 +1,12 @@
+//Body Div
 var titleBox = document.getElementsByClassName("titleBox")[0];
 var ripple = document.getElementsByClassName("rippleAnimContainer")[0];
 var bodyScrollBar = document.getElementsByClassName("leftScroller")[0];
 var bodyScrollTitle = document.getElementsByClassName("leftScrollerTitle")[0];
+//TailDiv
 var dataInsLink = document.getElementsByClassName("dataInsDiv")[0];
 var dataInsBtn = document.getElementsByClassName("dataInsBtn")[0];
+var gitHubRepoBtn = document.getElementsByClassName("gitHubRepoBtn")[0];
 
 //PS: where it shows ==/ they are places where it should be updated when a new node is added
 
@@ -27,6 +30,7 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
     }
     dataInsLink.classList.add("fadeIn");
     dataInsBtn.classList.add("fadeIn");
+    gitHubRepoBtn.classList.add("fadeIn");
   }
 };
 

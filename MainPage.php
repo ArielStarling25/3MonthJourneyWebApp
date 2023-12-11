@@ -27,6 +27,7 @@
     <div class="bodyDiv">
         <div class="leftScrollerTitle">
             <h1>Journey of 3 Months</h1>
+            <h4>"To improve is to change; to be perfect is to change often" - Winston Churchill</h4>
         </div>
         <div class="leftScroller">
             <ol>
@@ -97,11 +98,23 @@
     </div>
     <div class="tailDiv">
         <div class="dataInsDiv">
-                <a href="DataInsert.php">
-                    <button class="dataInsBtn">
-                        Data Insert
-                    </button>
-                </a>
+            <!-- Consider making this an OL or UL to accomodate additional buttons -->
+            <ol>
+                <li>
+                    <a href="DataInsert.php">
+                        <button class="dataInsBtn">
+                            Data Insert
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ArielStarling25/3MonthJourneyWebApp" target="_blank">
+                        <button class="gitHubRepoBtn">
+                            GitHub Repo
+                        </button>
+                    </a>
+                </li>
+            </ol>
         </div>
     </div>
     <script src="JS/MainPage.js"></script>
