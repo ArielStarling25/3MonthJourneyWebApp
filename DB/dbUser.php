@@ -113,7 +113,7 @@
         if($retrivedData != null){
             foreach($retrivedData as $dataEntry){
                 echo "Week start date: " . $dataEntry['WeekStartDate'] . "<br>";
-                echo "----------------------------------<br>";
+                echo "------------------------------------<br>";
                 echo $dataEntry['WeekSummary'] . "<br>";
             }
         }

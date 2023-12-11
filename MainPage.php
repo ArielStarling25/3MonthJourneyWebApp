@@ -32,7 +32,7 @@
         </div>
         <div class="leftScroller">
             <ol>
-                <!-- This is a single li element -->
+                <!-- This is a single li element / a single node(representing a single week) -->
                 <li>
                     <button class="Node1" value="nd1">
                         <p>Week 1</p>
