@@ -1,0 +1,70 @@
+/* This is for the TailDiv */
+.dataInsDiv {
+  height: fit-content;
+  width: fit-content;
+  margin-top: 900px;
+  margin-bottom: 200px;
+  margin-left: 50px !important;
+  text-align: center;
+  opacity: 0;
+}
+
+.dataInsDiv.fadeIn {
+  transition: 2.5s;
+  margin-top: 400px;
+  opacity: 1 !important;
+}
+
+.dataInsDiv ol {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+  margin-bottom: 200px;
+  overflow-wrap: break-word;
+  height: fit-content;
+}
+
+.dataInsDiv ol li {
+  float: left;
+  margin-bottom: 200px;
+  margin: 10px;
+}
+
+.dataInsDiv ol li a button {
+  height: 50px;
+  width: 150px;
+  background-color: lightskyblue;
+  border-radius: 100px;
+  border: 2px solid gray;
+  box-shadow: 3px 3px 8px darkgrey;
+  font-family: "Times New Roman";
+  font-size: medium;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.dataInsDiv ol li a button:hover {
+  width: 160px;
+  height: 60px;
+  margin-left: -5px;
+  background-color: aliceblue;
+}
+
+.dataInsDiv ol li a button:active {
+  margin-top: 10px;
+}
+
+.dataInsBtn.fadeIn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.gitHubRepoBtn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.filler {
+  height: 100px;
+  width: 10px;
+}
