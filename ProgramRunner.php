@@ -13,10 +13,12 @@
         </h1>
     </div>
     <div class="PRBodyDiv">
-        <?php
-            $python = shell_exec("python PY/HelloWorld.py");
-            echo $python;
-        ?>
+        <p>
+            <?php
+                $python = shell_exec("python PY/HelloWorld.py");
+                echo $python;
+            ?>
+        </p>
     </div>    
     <div class="PRTailDiv">
 
