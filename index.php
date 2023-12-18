@@ -105,7 +105,14 @@
                 <li>
                     <a href="DataInsert.php">
                         <button class="dataInsBtn">
-                            Data Insert
+                            Data Insertion
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="Check.php" target="_blank">
+                        <button class="phpCheckBtn">
+                            PHP Check
                         </button>
                     </a>
                 </li>

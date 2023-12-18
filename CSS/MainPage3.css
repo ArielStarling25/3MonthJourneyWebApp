@@ -6,7 +6,7 @@
   margin-bottom: 200px;
   margin-left: 50px !important;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
 
 .dataInsDiv.fadeIn {
@@ -40,6 +40,7 @@
   font-family: "Times New Roman";
   font-size: medium;
   opacity: 0;
+
   transition: 0.3s;
 }
 
@@ -55,6 +56,11 @@
 }
 
 .dataInsBtn.fadeIn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.phpCheckBtn.fadeIn {
   transition: 1s;
   opacity: 1 !important;
 }

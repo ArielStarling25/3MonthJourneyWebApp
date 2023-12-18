@@ -3,11 +3,13 @@ var titleBox = document.getElementsByClassName("titleBox")[0];
 var ripple = document.getElementsByClassName("rippleAnimContainer")[0];
 var bodyScrollBar = document.getElementsByClassName("leftScroller")[0];
 var bodyScrollTitle = document.getElementsByClassName("leftScrollerTitle")[0];
+
 //TailDiv
-var dataInsLink = document.getElementsByClassName("dataInsDiv")[0];
-var dataInsBtn = document.getElementsByClassName("dataInsBtn")[0];
-var gitHubRepoBtn = document.getElementsByClassName("gitHubRepoBtn")[0];
-var programRunnerBtn = document.getElementsByClassName("programRunnerBtn")[0];
+const dataInsLink = document.getElementsByClassName("dataInsDiv")[0];
+const dataInsBtn = document.getElementsByClassName("dataInsBtn")[0];
+const gitHubRepoBtn = document.getElementsByClassName("gitHubRepoBtn")[0];
+const programRunnerBtn = document.getElementsByClassName("programRunnerBtn")[0];
+const phpCheckBtn = document.getElementsByClassName("phpCheckBtn")[0];
 
 //PS: where it shows ==/ they are places where it should be updated when a new node is added
 
@@ -22,7 +24,9 @@ const nodes = [
 //When the starting button is clicked
 document.getElementsByClassName("titleBtn")[0].onclick = function () {
   if (this.value === "begin") {
+    console.log("HEHE");
     console.log("Start button pressed");
+    console.log("HEHE");
     this.innerHTML = "...";
     titleBox.classList.add("horizTranslate");
     ripple.classList.add("disappear");
@@ -33,8 +37,10 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
     }
     dataInsLink.classList.add("fadeIn");
     dataInsBtn.classList.add("fadeIn");
+    console.log("HEY");
     gitHubRepoBtn.classList.add("fadeIn");
     programRunnerBtn.classList.add("fadeIn");
+    phpCheckBtn.classList.add("fadeIn");
     console.log("FadeIn Complete");
   }
 };
