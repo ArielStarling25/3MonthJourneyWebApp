@@ -1,0 +1,10 @@
+.PRHeadDiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PRHeadDiv h1 {
+  font-family: Impact;
+  font-stretch: expanded;
+  text-align: center;
+}
