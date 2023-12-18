@@ -100,7 +100,7 @@
     </div>
     <div class="tailDiv">
         <div class="dataInsDiv">
-            <!-- Consider making this an OL or UL to accomodate additional buttons -->
+            <!-- This is an OL to accomodate additional buttons -->
             <ol>
                 <li>
                     <a href="DataInsert.php">
@@ -113,6 +113,13 @@
                     <a href="https://github.com/ArielStarling25/3MonthJourneyWebApp" target="_blank">
                         <button class="gitHubRepoBtn">
                             GitHub Repo
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="ProgramRunner.php" target="_blank">
+                        <button class="programRunnerBtn">
+                            ProgramRunner
                         </button>
                     </a>
                 </li>

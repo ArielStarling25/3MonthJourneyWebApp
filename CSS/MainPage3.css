@@ -59,7 +59,12 @@
   opacity: 1 !important;
 }
 
-.gitHubRepoBtn {
+.gitHubRepoBtn.fadeIn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
+.programRunnerBtn.fadeIn {
   transition: 1s;
   opacity: 1 !important;
 }
