@@ -3,13 +3,24 @@ html {
 }
 
 .PRHeadDiv {
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.PRHeadDiv h1 {
+.PRHeadDiv div {
+  background-color: grey;
+  height: 110px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.PRHeadDiv div h1 {
   font-family: Impact;
-  font-stretch: expanded;
+  word-spacing: 30px;
+  letter-spacing: 5px;
   text-align: center;
   color: aliceblue;
 }
@@ -21,4 +32,6 @@ html {
 
 .PRBodyDiv p {
   color: lightgray;
+  margin-top: 100px;
+  margin-left: 200px;
 }

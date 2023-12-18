@@ -8,9 +8,11 @@
 </head>
 <body>
     <div class="PRHeadDiv">
-        <h1>
-            Program Runner
-        </h1>
+        <div>
+            <h1>
+                Program Runner
+            </h1>
+        </div>
     </div>
     <div class="PRBodyDiv">
         <p>
