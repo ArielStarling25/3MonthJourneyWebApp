@@ -95,6 +95,21 @@
                         <p>Click again to close...</p>
                     </button>
                 </li>
+                <li>
+                    <button class="Node5" value="nd5">
+                        <p>Week 5</p>
+                        <p>
+                            <?php
+                                $err = 0;
+                                displayData(getDataByWeek($journeyDB, 5, $err));
+                                if($err == 1){
+                                    echo "No Data";
+                                }
+                            ?>
+                        </p>
+                        <p>Click again to close...</p>
+                    </button>
+                </li>
             </ol>
         </div>
     </div>
