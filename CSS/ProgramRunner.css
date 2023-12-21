@@ -14,15 +14,18 @@ html {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 50px;
+  padding: 20px;
+  border-radius: 50px;
 }
 
 .PRHeadDiv div h1 {
-  font-family: Impact;
+  font-family: Georgia;
   word-spacing: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   text-align: center;
   color: aliceblue;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .PRBodyDiv {
@@ -30,8 +33,61 @@ html {
   margin-right: auto;
 }
 
-.PRBodyDiv p {
-  color: lightgray;
-  margin-top: 100px;
-  margin-left: 200px;
+.ResHolder {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 400px);
+  height: 500px;
+  background-color: grey;
+  border-radius: 50px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.ResultBox {
+  float: left;
+  padding-top: 10px;
+  padding-left: 30px;
+  border-radius: 50px;
+  height: calc(100% - 20px);
+  width: calc(100% - 300px);
+  background-color: lightgray;
+  overflow: scroll;
+}
+
+.ResultBox p {
+  color: black;
+}
+
+.PyList {
+  float: left;
+  width: 240px;
+  height: calc(100% - 20px);
+  margin-left: 20px;
+  background-color: lightgray;
+  border-radius: 50px;
+}
+
+.PyList ol {
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+
+.PyList ol li {
+  margin: 10px;
+}
+
+.PyList ol li button {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  transition-duration: 0.5s;
+}
+
+.PyList ol li button:hover {
+  border: 2px solid black;
 }

@@ -7,6 +7,13 @@
     <title>Program Runner</title>
 </head>
 <body>
+    <?php 
+        // Specify the directory to scan for files
+        $dir = 'Uploads/Python';
+        $files = scandir($dir);
+        $jsonData = json_encode($files);
+        $decodedArray = json_decode($jsonData);
+    ?>
     <div class="PRHeadDiv">
         <div>
             <h1>
@@ -15,15 +22,41 @@
         </div>
     </div>
     <div class="PRBodyDiv">
-        <p>
-            <?php
-                $python = shell_exec("python PY/HelloWorld.py");
-                echo $python;
-            ?>
-        </p>
+        <div class="ResHolder">
+            <div class="ResultBox">
+                <p>
+                    <?php
+                        $python = shell_exec("python Uploads/Python/HelloWorld.py");
+                        $formattedOutput = str_replace("\n", "<br>", $python);
+                        echo $formattedOutput;
+                    ?>
+                </p>
+            </div>
+            <div class="PyList">
+                <ol>
+                    <form id='programSub' method='post' action='<?php echo $_SERVER['PHP_SELF']; ?>'>
+                    <?php 
+                        foreach($decodedArray as $file){
+                            if($file == "." || $file == ".."){
+                                //omit the empty strings, only include the named files
+                            }
+                            else{
+                                echo "<li>
+                                        <button value='$file'>
+                                            $file
+                                        </button>
+                                </li>";
+                            }
+                        }
+                    ?>
+                    </form>
+                </ol>
+            </div>
+        </div>
     </div>    
     <div class="PRTailDiv">
 
     </div>
+    <script src="JS/ProgramRunner.js"></script>
 </body>
 </html>
