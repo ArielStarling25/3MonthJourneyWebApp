@@ -75,11 +75,11 @@ html {
   list-style: none;
 }
 
-.PyList ol li {
+.PyList ol form li {
   margin: 10px;
 }
 
-.PyList ol li button {
+.PyList ol form li input {
   width: 150px;
   height: 40px;
   text-align: center;
