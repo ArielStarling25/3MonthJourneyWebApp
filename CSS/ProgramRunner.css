@@ -85,9 +85,9 @@ html {
   text-align: center;
   border-radius: 10px;
   border: none;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
-.PyList ol li button:hover {
+.PyList ol li input:hover {
   border: 2px solid black;
 }
