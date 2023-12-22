@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        // Specify the directory to scan for files
+        //Directory for python files
         $dir = 'Uploads/Python';
         $files = scandir($dir);
         $jsonData = json_encode($files);
