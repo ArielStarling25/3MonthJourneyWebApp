@@ -16,6 +16,7 @@
         $decodedArray = json_decode($jsonData);
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            consoleLog("Recieved post");
             $iD = $_REQUEST['idKey'];
             $buttonClicked = $_REQUEST['submit'];
             if($iD == "callScript"){

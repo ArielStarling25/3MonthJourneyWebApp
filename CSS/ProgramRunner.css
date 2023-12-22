@@ -53,7 +53,7 @@ html {
   height: calc(100% - 20px);
   width: calc(100% - 300px);
   background-color: lightgray;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .ResultBox p {
