@@ -110,6 +110,21 @@
                         <p>Click again to close...</p>
                     </button>
                 </li>
+                <li>
+                    <button class="Node6" value="nd6">
+                        <p>Week 6</p>
+                        <p>
+                            <?php
+                                $err = 0;
+                                displayData(getDataByWeek($journeyDB, 6, $err));
+                                if($err == 1){
+                                    echo "No Data";
+                                }
+                            ?>
+                        </p>
+                        <p>Click again to close...</p>
+                    </button>
+                </li>
             </ol>
         </div>
     </div>
@@ -142,6 +157,13 @@
                     <a href="ProgramRunner.php" target="_blank">
                         <button class="programRunnerBtn">
                             ProgramRunner
+                        </button>
+                    </a>
+                </li>
+                <li>
+                    <a href="MediaBrowser.php" target="_blank">
+                        <button class="mediaBrowserBtn">
+                            MediaBrowser
                         </button>
                     </a>
                 </li>

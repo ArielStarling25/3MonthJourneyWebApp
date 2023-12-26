@@ -129,7 +129,7 @@
 /* ------------- Node 1 ------------- */
 .Node1.floatUp {
   transition: 1s;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   margin-top: 0px;
   opacity: 1 !important;
 }
@@ -168,7 +168,7 @@
 /* ------------- Node 2 ------------- */
 .Node2.floatUp {
   transition: 1s;
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
   margin-top: 0px;
   opacity: 1 !important;
 }
@@ -207,7 +207,7 @@
 /* ------------- Node 3 ------------- */
 .Node3.floatUp {
   transition: 1s;
-  transition-delay: 0.6s;
+  transition-delay: 0.3s;
   margin-top: 0px;
   opacity: 1 !important;
 }
@@ -246,7 +246,7 @@
 /* ------------- Node 4 ------------- */
 .Node4.floatUp {
   transition: 1s;
-  transition-delay: 0.8s;
+  transition-delay: 0.4s;
   margin-top: 0px;
   opacity: 1 !important;
 }
@@ -285,7 +285,7 @@
 /* ------------- Node 5 ------------- */
 .Node5.floatUp {
   transition: 1s;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
   margin-top: 0px;
   opacity: 1 !important;
 }
@@ -301,6 +301,45 @@
 }
 
 .Node5.growContent p {
+  &:nth-child(1) {
+    font-size: larger;
+    font-weight: bold;
+    position: relative;
+  }
+
+  &:nth-child(2) {
+    opacity: 1;
+    font-size: medium;
+    position: relative;
+  }
+
+  &:nth-child(3) {
+    opacity: 1;
+    color: #7a7a7a;
+    font-size: small;
+    position: relative;
+  }
+}
+
+/* ------------- Node 6 ------------- */
+.Node6.floatUp {
+  transition: 1s;
+  transition-delay: 0.6s;
+  margin-top: 0px;
+  opacity: 1 !important;
+}
+
+.Node6.growContent {
+  transition: 2s;
+  border: 3px solid black;
+  background-image: linear-gradient(0deg, #d4d4d4, rgb(171, 212, 253));
+  box-shadow: 5px 5px 10px black;
+  text-align: left;
+  height: 450px !important;
+  width: 500px !important;
+}
+
+.Node6.growContent p {
   &:nth-child(1) {
     font-size: larger;
     font-weight: bold;

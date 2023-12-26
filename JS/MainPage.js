@@ -20,6 +20,7 @@ const nodes = [
   document.getElementsByClassName("Node3")[0],
   document.getElementsByClassName("Node4")[0],
   document.getElementsByClassName("Node5")[0],
+  document.getElementsByClassName("Node6")[0],
 ];
 
 //When the starting button is clicked
@@ -47,7 +48,7 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
 };
 
 //Array holding names of each week node ==/
-const nodesNames = ["Node1", "Node2", "Node3", "Node4", "Node5"];
+const nodesNames = ["Node1", "Node2", "Node3", "Node4", "Node5", "Node6"];
 let nodeState = [];
 for (let i = 0; i < nodesNames.length; i++) {
   nodeState.push(false);
@@ -101,6 +102,15 @@ function contentGrowth(nd) {
         nodeState[4] = true;
       }
       break;
+    case "nd6":
+      if (nodeState[5]) {
+        nodes[5].classList.remove("growContent");
+        nodeState[5] = false;
+      } else {
+        nodes[5].classList.add("growContent");
+        nodeState[5] = true;
+      }
+      break;
     default:
       this.innerHTML = "...";
     //Nth
@@ -130,5 +140,10 @@ document.getElementsByClassName("Node4")[0].onclick = function () {
 
 document.getElementsByClassName("Node5")[0].onclick = function () {
   console.log("Week 5 pressed");
+  contentGrowth(this.value);
+};
+
+document.getElementsByClassName("Node6")[0].onclick = function () {
+  console.log("Week 6 pressed");
   contentGrowth(this.value);
 };
