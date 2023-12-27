@@ -7,16 +7,6 @@ $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $isMedia = false;
 echo $fileType;
 
-// // Check if image file is a actual image or fake image
-// $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-// if($check !== false) {
-//     echo "File is an image - " . $check["mime"] . ".";
-//     $uploadOk = 1;
-// } else {
-//     echo "File is not an image.";
-//     $uploadOk = 0;
-// }
-
 //Choose upload section depending on if it is a python file
 if($fileType == "py"){
     $target_dir = $target_dir . "Python/";
