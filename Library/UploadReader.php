@@ -1,19 +1,32 @@
 <?php
 
 $target_dir = "Uploads/";
-$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$isMedia = false;
+echo $fileType;
 
-// Check if image file is a actual image or fake image
-$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-if($check !== false) {
-    echo "File is an image - " . $check["mime"] . ".";
-    $uploadOk = 1;
-} else {
-    echo "File is not an image.";
-    $uploadOk = 0;
+// // Check if image file is a actual image or fake image
+// $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+// if($check !== false) {
+//     echo "File is an image - " . $check["mime"] . ".";
+//     $uploadOk = 1;
+// } else {
+//     echo "File is not an image.";
+//     $uploadOk = 0;
+// }
+
+//Choose upload section depending on if it is a python file
+if($fileType == "py"){
+    $target_dir = $target_dir . "Python/";
+    echo "ehe";
 }
+else{
+    $target_dir = $target_dir . "Media/";
+    $isMedia = true;
+}
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 
 // Check if file already exists
 if (file_exists($target_file)) {
@@ -28,10 +41,17 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 }
 
 // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-&& $imageFileType != "gif" ) {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
+if($isMedia){
+    if($fileType != "jpg" && $fileType != "png" && $fileType != "jpeg" && $fileType != "gif" ) {
+        echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+        $uploadOk = 0;
+    }
+}
+else{
+    if($fileType != "py"){
+        echo "Sorry, invalid python file.";
+        $uploadOk = 0;
+    }
 }
 
 // Check if $uploadOk is set to 0 by an error

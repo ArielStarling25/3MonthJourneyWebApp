@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include 'ConsoleWriter.php';
+        include 'Library/ConsoleWriter.php';
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             consoleLog("Recieved post");
@@ -23,7 +23,7 @@
                 }
             }
             else if($iD == "upScript"){
-                
+                include 'Library/UploadReader.php';
             }
         }
 
