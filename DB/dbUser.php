@@ -1,5 +1,5 @@
 <?php
-    include './ConsoleWriter.php';
+    include './Library/ConsoleWriter.php';
     class DBSQLiteUser{
         private $databaseObj;
         

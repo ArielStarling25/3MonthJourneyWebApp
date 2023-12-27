@@ -9,11 +9,6 @@
 <body>
     <?php 
         include 'ConsoleWriter.php';
-        //Directory for python files
-        $dir = 'Uploads/Python';
-        $files = scandir($dir);
-        $jsonData = json_encode($files);
-        $decodedArray = json_decode($jsonData);
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             consoleLog("Recieved post");
@@ -27,7 +22,16 @@
                     echo $eX2->getMessage();
                 }
             }
+            else if($iD == "upScript"){
+                
+            }
         }
+
+        //Directory for python files
+        $dir = 'Uploads/Python';
+        $files = scandir($dir);
+        $jsonData = json_encode($files);
+        $decodedArray = json_decode($jsonData);
     ?>
     <div class="PRHeadDiv">
         <div>
@@ -68,6 +72,12 @@
                                 }
                             }
                         ?>
+                    </form>
+                    <!-- Implement upload form here -->
+                    <form id="uploadProg" method="post" enctype="multipart/form-data" action='<?php echo $_SERVER['PHP_SELF']; ?>'>
+                        <input type="hidden" name="idKey" value="upScript">
+                        <input type="file" id="fileToUpload" name="fileToUpload">
+                        <input type="submit" name="submit" value="Upload File">
                     </form>
                 </ol>
             </div>
