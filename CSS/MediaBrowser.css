@@ -8,7 +8,7 @@ html {
   width: calc(100% - 700px);
   height: 100px;
   margin-top: 40px;
-  background-color: gray;
+  background-color: grey;
   box-shadow: 5px 5px 10px black;
   padding: 20px;
   border-radius: 30px;
@@ -26,7 +26,7 @@ html {
 .mediaBoxHolder {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 40px;
   background-color: grey;
   box-shadow: 5px 5px 10px black;
   width: calc(100% - 500px);

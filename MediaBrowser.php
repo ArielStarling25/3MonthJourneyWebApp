@@ -14,7 +14,14 @@
     </div>
     <div class="mbBodyDiv">   
         <div class="mediaBoxHolder">
+            <!-- Implement media player functionality here -->
+            <div class="mediaPlayer">
 
+            </div>
+            <!-- Implement media scroller + uploader functionality here -->
+            <div class="mediaScroll">
+
+            </div>
         </div>
     </div>
     <div class="mbTailDiv">
