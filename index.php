@@ -140,7 +140,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="Check.php" target="_blank">
+                    <a href="Library/Check.php" target="_blank">
                         <button class="phpCheckBtn">
                             PHP Check
                         </button>

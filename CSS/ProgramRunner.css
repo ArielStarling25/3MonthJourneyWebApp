@@ -16,6 +16,7 @@ html {
   margin-right: auto;
   padding: 20px;
   border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
 }
 
 .PRHeadDiv div h1 {
@@ -43,6 +44,7 @@ html {
   border-radius: 50px;
   padding: 10px;
   overflow: hidden;
+  box-shadow: 5px 5px 10px black;
 }
 
 .ResultBox {
