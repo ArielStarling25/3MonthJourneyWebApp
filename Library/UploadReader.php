@@ -5,12 +5,10 @@ $uploadOk = 1;
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $fileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $isMedia = false;
-echo $fileType;
 
 //Choose upload section depending on if it is a python file
 if($fileType == "py"){
     $target_dir = $target_dir . "Python/";
-    echo "ehe";
 }
 else{
     $target_dir = $target_dir . "Media/";
@@ -25,7 +23,7 @@ if (file_exists($target_file)) {
 }
 
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 500000) { //500KB
   echo "Sorry, your file is too large.";
   $uploadOk = 0;
 }
@@ -50,7 +48,7 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
+    consoleLog("The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.");
   } else {
     echo "Sorry, there was an error uploading your file.";
   }

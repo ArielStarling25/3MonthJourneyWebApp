@@ -28,7 +28,7 @@
     <div class="bodyDiv">
         <div class="leftScrollerTitle">
             <h1>Journey of 3 Months</h1>
-            <h4>"To improve is to change; to be perfect is to change often" - Winston Churchill</h4>
+            <h4><?php include 'Library/quoteGen.php' ?></h4>
             <p>By: Ariel Starling</p>
         </div>
         <div class="leftScroller">

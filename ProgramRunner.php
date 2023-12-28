@@ -74,11 +74,13 @@
                         ?>
                     </form>
                     <!-- Implement upload form here -->
-                    <form id="uploadProg" method="post" enctype="multipart/form-data" action='<?php echo $_SERVER['PHP_SELF']; ?>'>
-                        <input type="hidden" name="idKey" value="upScript">
-                        <input type="file" id="fileToUpload" name="fileToUpload">
-                        <input type="submit" name="submit" value="Upload File">
-                    </form>
+                    <div class="uploadForm">
+                        <form id="uploadProg" method="post" enctype="multipart/form-data" action='<?php echo $_SERVER['PHP_SELF']; ?>'>
+                            <input type="hidden" name="idKey" value="upScript">
+                            <input type="file" id="fileToUpload" name="fileToUpload">
+                            <input type="submit" name="submit" value="Upload File">
+                        </form>
+                    </div>
                 </ol>
             </div>
         </div>
