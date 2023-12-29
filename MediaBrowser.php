@@ -14,18 +14,27 @@
     </div>
     <div class="mbBodyDiv">   
         <div class="mediaBoxHolder">
-            <!-- Implement media player functionality here -->
             <div class="mediaPlayer">
-
+                <video width="640" height="480" controls>
+                    <source src="Uploads/Media/Video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
             <!-- Implement media scroller + uploader functionality here -->
             <div class="mediaScroll">
-
+                <ol>
+                    <li>
+                        Node 1
+                    </li>
+                    <li>
+                        Node 2
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
     <div class="mbTailDiv">
-
+        
     </div>
 </body>
 </html>
