@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="CSS/MediaBrowser.css" />
 </head>
 <body>
+    <?php 
+        include 'Library/ConsoleWriter.php';
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            consoleLog("Recieved post");
+            $iD = $_REQUEST['idKey'];
+            if($iD == "callMedia"){
+                try{
+                    $buttonClicked = $_REQUEST['submit'];
+                    consoleLog($buttonClicked . " was clicked ");
+                }
+                catch(Exception $eX2){
+                    echo $eX2->getMessage();
+                }
+            }
+            else if($iD == "upMedia"){
+                include 'Library/UploadReader.php';
+            }
+        }
+
+        $dir = 'Uploads/Media';
+        $files = scandir($dir);
+        $jsonData = json_encode($files);
+        $decodedArray = json_decode($jsonData);
+    ?>
     <div class="mbHeadDiv">
         <div class="mbTitleBox">
             <h1>Media Browser</h1>
@@ -15,20 +40,40 @@
     <div class="mbBodyDiv">   
         <div class="mediaBoxHolder">
             <div class="mediaPlayer">
-                <video width="640" height="480" controls>
-                    <source src="Uploads/Media/Video1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <?php 
+                    if($buttonClicked != null){
+                        $ext = pathinfo($buttonClicked, PATHINFO_EXTENSION);
+                        consoleLog($ext);
+                        if($ext == "mp4"){ ?>
+                            <video width="640" height="480" controls>
+                                <source src="Uploads/Media/<?= $buttonClicked ?>" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                <?php 
+                        }else{ ?>
+                            <img src='Uploads/Media/<?= $buttonClicked ?>' width="640" height="480">
+                <?php
+                        }
+                    }  ?>
             </div>
             <!-- Implement media scroller + uploader functionality here -->
             <div class="mediaScroll">
                 <ol>
-                    <li>
-                        Node 1
-                    </li>
-                    <li>
-                        Node 3
-                    </li>
+                    <form id='programSub' method='post' action='<?php echo $_SERVER['PHP_SELF']; ?>'>
+                        <input type="hidden" name="idKey" value="callMedia">
+                        <?php 
+                            foreach($decodedArray as $file){
+                                if($file == "." || $file == ".."){
+                                    //omit the empty strings, only include the named files
+                                }
+                                else{
+                                    echo "<li>
+                                            <input name='submit' type='submit' value='$file'>
+                                    </li>";
+                                }
+                            }
+                        ?>
+                    </form>
                 </ol>
             </div>
         </div>

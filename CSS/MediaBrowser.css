@@ -55,7 +55,7 @@ html {
   width: fit-content;
 }
 
-.mediaScroll ol li {
+.mediaScroll ol form li input {
   float: left;
   width: fit-content;
   height: 80px;
@@ -66,6 +66,6 @@ html {
   padding: 5px;
 }
 
-.mediaScroll ol li:hover {
+.mediaScroll ol li input:hover {
   border: 2px solid black;
 }
