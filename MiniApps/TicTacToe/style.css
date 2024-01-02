@@ -1,0 +1,12 @@
+html {
+  background-color: rgb(96, 187, 157);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid div {
+  text-align: center;
+}

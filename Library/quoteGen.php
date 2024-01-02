@@ -7,7 +7,9 @@ $quoteList = [
     '"Give us the tools, and we will finish the job" - Winston Churchill',
     '"It is a fine thing to be honest, but it is also very important to be right" - Winston Churchill',
     '"He who is not courageous enough to take risks will accomplish nothing in life."
-    - Muhammad Ali'
+    - Muhammad Ali',
+    '"Courage is found in unlikely places" - J.R.R Tolkien',
+    '"Creativity requires the courage to let go of certainties" - Erich Fromm',
 ];
 
 $randomNum = rand(0, count($quoteList)-1);
