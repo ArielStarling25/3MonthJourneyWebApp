@@ -183,7 +183,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="" target="_blank">
+                    <a href="MiniApps" target="_blank">
                         <button class="miniGameBtn">
                             MiniApps (WIP)
                         </button>
