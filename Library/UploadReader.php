@@ -44,12 +44,12 @@ else{
 
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-  echo "Sorry, your file was not uploaded.";
+  echo "<br>Sorry, there was an error in uploading your file.";
 // if everything is ok, try to upload file
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-    consoleLog("The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.");
+    consoleLog("The file ". htmlspecialchars(basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.");
   } else {
-    echo "Sorry, there was an error uploading your file.";
+    echo "<br>Sorry, there was an error uploading your file.";
   }
 }

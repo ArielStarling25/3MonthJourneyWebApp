@@ -10,6 +10,7 @@ const dataInsBtn = document.getElementsByClassName("dataInsBtn")[0];
 const gitHubRepoBtn = document.getElementsByClassName("gitHubRepoBtn")[0];
 const programRunnerBtn = document.getElementsByClassName("programRunnerBtn")[0];
 const mediaBrowserBtn = document.getElementsByClassName("mediaBrowserBtn")[0];
+const miniGameBtn = document.getElementsByClassName("miniGameBtn")[0];
 const phpCheckBtn = document.getElementsByClassName("phpCheckBtn")[0];
 
 //PS: where it shows ==/ they are places where it should be updated when a new node is added
@@ -44,6 +45,7 @@ document.getElementsByClassName("titleBtn")[0].onclick = function () {
     gitHubRepoBtn.classList.add("fadeIn");
     programRunnerBtn.classList.add("fadeIn");
     mediaBrowserBtn.classList.add("fadeIn");
+    miniGameBtn.classList.add("fadeIn");
     phpCheckBtn.classList.add("fadeIn");
     console.log("FadeIn Complete");
   }

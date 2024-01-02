@@ -167,6 +167,13 @@
                         </button>
                     </a>
                 </li>
+                <li>
+                    <a href="" target="_blank">
+                        <button class="miniGameBtn">
+                            MiniGames (WIP)
+                        </button>
+                    </a>
+                </li>
             </ol>
         </div>
         <div class="filler">

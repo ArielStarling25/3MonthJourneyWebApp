@@ -79,6 +79,11 @@
   opacity: 1 !important;
 }
 
+.miniGameBtn.fadeIn {
+  transition: 1s;
+  opacity: 1 !important;
+}
+
 .filler {
   height: 100px;
   width: 10px;
