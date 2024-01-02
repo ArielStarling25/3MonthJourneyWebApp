@@ -48,6 +48,7 @@ html {
 .mediaScroll {
   margin-top: 10px;
   float: none;
+  overflow-x: scroll;
 }
 
 .mediaScroll ol {
