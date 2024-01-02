@@ -7,7 +7,7 @@ html {
   margin-right: auto;
   width: calc(100% - 700px);
   height: 100px;
-  margin-top: 40px;
+  margin-top: 20px;
   background-color: grey;
   box-shadow: 5px 5px 10px black;
   padding: 20px;
@@ -30,7 +30,7 @@ html {
   background-color: grey;
   box-shadow: 5px 5px 10px black;
   width: calc(100% - 500px);
-  height: 600px;
+  height: 700px;
   border-radius: 30px;
   padding: 10px;
   overflow-wrap: break-word;
@@ -58,7 +58,7 @@ html {
 .mediaScroll ol form li input {
   float: left;
   width: fit-content;
-  height: 80px;
+  height: 50px;
   background-color: aliceblue;
   margin: 5px;
   transition-duration: 0.3s;
