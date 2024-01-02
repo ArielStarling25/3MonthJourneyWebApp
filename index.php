@@ -170,7 +170,7 @@
                 <li>
                     <a href="" target="_blank">
                         <button class="miniGameBtn">
-                            MiniGames (WIP)
+                            MiniApps (WIP)
                         </button>
                     </a>
                 </li>

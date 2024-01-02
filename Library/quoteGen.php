@@ -6,6 +6,8 @@ $quoteList = [
     '"Attitude is a little thing that makes a big difference" - Winston Churchill',
     '"Give us the tools, and we will finish the job" - Winston Churchill',
     '"It is a fine thing to be honest, but it is also very important to be right" - Winston Churchill',
+    '"He who is not courageous enough to take risks will accomplish nothing in life."
+    - Muhammad Ali'
 ];
 
 $randomNum = rand(0, count($quoteList)-1);

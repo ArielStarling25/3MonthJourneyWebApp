@@ -75,7 +75,7 @@
                             }
                         ?>
                     </form>
-                    <form id="uploadProg" method="post" enctype="multipart/form-data" action='<?php echo $_SERVER['PHP_SELF']; ?>'>
+                    <form class="uploadMediaForm" id="uploadProg" method="post" enctype="multipart/form-data" action='<?php echo $_SERVER['PHP_SELF']; ?>'>
                         <li>
                             <input type="hidden" name="idKey" value="upMedia">
                             <input type="file" id="fileToUpload" name="fileToUpload">

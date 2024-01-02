@@ -69,3 +69,7 @@ html {
 .mediaScroll ol li input:hover {
   border: 2px solid black;
 }
+
+.uploadMediaForm {
+  width: 600px;
+}
