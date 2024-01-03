@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="titleBox">
+        <h1>TicTacToe</h1>
+    </div>
     <div class="grid">
         <div> 1 </div>
         <div> 2 </div>
@@ -17,6 +20,9 @@
         <div> 1 </div>
         <div> 2 </div>
         <div> 3 </div>
+    </div>
+    <div class="prompt">
+        <h4>Your Turn...</h4>
     </div>
 </body>
 </html>

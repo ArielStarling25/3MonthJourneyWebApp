@@ -2,11 +2,54 @@ html {
   background-color: rgb(96, 187, 157);
 }
 
+.titleBox {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 1000px);
+  height: 100px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.titleBox h1 {
+  text-align: center;
+  font-size: 45px;
+  font-family: Arial;
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
+  background-color: bisque;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: min-content;
+  box-shadow: 5px 5px 10px black;
 }
 
 .grid div {
   text-align: center;
+  background-color: aquamarine;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 80px;
+  width: 100px;
+  height: 100px;
+  transition-duration: 0.2s;
+}
+
+.grid div:hover {
+  background-color: rgb(172, 235, 214);
+}
+
+.grid div:active {
+  background-color: white;
 }
