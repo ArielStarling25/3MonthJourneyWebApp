@@ -24,5 +24,6 @@
     <div class="prompt">
         <h4>Your Turn...</h4>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
