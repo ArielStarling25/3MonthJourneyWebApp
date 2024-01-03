@@ -21,6 +21,23 @@ html {
   font-family: Arial;
 }
 
+.switch {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: aquamarine;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 20px;
+}
+
+.switch:hover {
+  background-color: rgb(172, 235, 214);
+}
+
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,7 +45,7 @@ html {
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   width: min-content;
   box-shadow: 5px 5px 10px black;
 }

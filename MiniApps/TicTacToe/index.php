@@ -10,6 +10,9 @@
     <div class="titleBox">
         <h1>TicTacToe</h1>
     </div>
+    <div class="switch">
+        AI Switch
+    </div>
     <div class="grid">
         <div> 1 </div>
         <div> 2 </div>
