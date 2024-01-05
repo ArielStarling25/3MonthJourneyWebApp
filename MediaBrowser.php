@@ -57,7 +57,6 @@
                         }
                     }  ?>
             </div>
-            <!-- Implement media scroller + uploader functionality here -->
             <div class="mediaScroll">
                 <ol>
                     <form id='programSub' method='post' action='<?php echo $_SERVER['PHP_SELF']; ?>'>

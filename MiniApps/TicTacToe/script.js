@@ -6,6 +6,7 @@ const promptBox = document.getElementsByClassName('prompt')[0];
 let winCond = '';
 let player1Turn = true;
 let boardOccupancyCount = 0;
+let botEnabled = false;
 
 //setting all the grid elements to an empty block
 function reset() {
@@ -21,6 +22,12 @@ for (let i = 0; i < gridElements.length; i++) {
   gridElements[i].addEventListener('click', function () {
     if (boardOccupancyCount < 9) {
       alternateClick(this);
+      checkBoard();
+      checkWin();
+
+      if (botEnabled && winCond == '') {
+        performAI();
+      }
       checkBoard();
       checkWin();
     } else {
@@ -42,14 +49,24 @@ function alternateClick(node) {
     if (node.textContent == 'O' || node.textContent == 'X') {
       promptBox.textContent = 'You cant do that...';
     } else {
-      if (player1Turn) {
-        player1Turn = false;
-        node.textContent = 'O';
-        promptBox.textContent = 'Player 2 turn...';
+      if (botEnabled) {
+        if (player1Turn) {
+          player1Turn = false;
+          node.textContent = 'O';
+          //performAI(); //Bot AI implementation needed for this to function
+        } else {
+          promptBox.textContent = 'Its not your turn yet';
+        }
       } else {
-        player1Turn = true;
-        node.textContent = 'X';
-        promptBox.textContent = 'Player 1 turn...';
+        if (player1Turn) {
+          player1Turn = false;
+          node.textContent = 'O';
+          promptBox.textContent = 'Player 2 turn...';
+        } else {
+          player1Turn = true;
+          node.textContent = 'X';
+          promptBox.textContent = 'Player 1 turn...';
+        }
       }
     }
   } else {
@@ -74,7 +91,8 @@ function checkBoard() {
     }
   }
 
-  console.log(gridView, boardOccupancyCount);
+  console.log('GridView: ', gridView, boardOccupancyCount);
+  console.log('GridViewArray: ', gridViewTemp);
   boardOccupancyCount = 0;
 }
 
@@ -140,17 +158,38 @@ function checkWin() {
   }
 }
 
+//Exclude Max
+function getRandomNum(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 //Bot Functionality
-function performAI() {}
+//Implementation at a later date :P too lazy LOL
+function performAI() {
+  //Random chosen array node and choose only from an empty node
+  let placerArr = [];
+  for (let i = 0; i < gridViewTemp.length; i++) {
+    if (gridViewTemp[i] == '') {
+      placerArr.push(i);
+    }
+  }
+
+  console.log('PlacerArray: ', placerArr);
+  let choice = getRandomNum(0, placerArr.length);
+  gridElements[placerArr[choice]].textContent = 'X';
+  player1Turn = true;
+}
 
 let switchToggle = true;
 botSwitch.onclick = function () {
   console.log('Switch Toggled from: ', switchToggle);
   if (switchToggle) {
     switchToggle = false;
+    botEnabled = false;
     this.classList.remove('activated');
   } else {
     switchToggle = true;
+    botEnabled = true;
     this.classList.add('activated');
   }
 };
