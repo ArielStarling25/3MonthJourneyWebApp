@@ -25,7 +25,7 @@
         <div> 3 </div>
     </div>
     <div class="prompt">
-        <h4>Your Turn...</h4>
+        Your Turn...
     </div>
     <script src="script.js"></script>
 </body>

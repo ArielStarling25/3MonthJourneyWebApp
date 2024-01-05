@@ -22,20 +22,36 @@ html {
 }
 
 .switch {
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   height: fit-content;
   padding: 10px;
   background-color: aquamarine;
+  color: black;
   border: 2px solid black;
   box-shadow: 5px 5px 10px black;
   border-radius: 20px;
+  transition-duration: 0.1s;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .switch:hover {
   background-color: rgb(172, 235, 214);
+}
+
+.switch:active {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.switch.activated {
+  background-color: rgb(53, 107, 89);
+  color: white;
+  box-shadow: none;
 }
 
 .grid {
@@ -45,7 +61,6 @@ html {
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   width: min-content;
   box-shadow: 5px 5px 10px black;
 }
@@ -76,9 +91,6 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-}
-
-.prompt h4 {
   text-align: center;
   font-size: 30px;
 }
