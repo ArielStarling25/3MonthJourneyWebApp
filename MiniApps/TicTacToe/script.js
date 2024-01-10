@@ -53,7 +53,6 @@ function alternateClick(node) {
         if (player1Turn) {
           player1Turn = false;
           node.textContent = 'O';
-          //performAI(); //Bot AI implementation needed for this to function
         } else {
           promptBox.textContent = 'Its not your turn yet';
         }
