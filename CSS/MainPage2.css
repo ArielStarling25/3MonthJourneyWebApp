@@ -480,7 +480,7 @@
 /* ------------- Node 10 ------------- */
 .Node10.floatUp {
   transition: 1s;
-  transition-delay: 0.9s;
+  transition-delay: 1s;
   margin-top: 0px;
   opacity: 1 !important;
 }
