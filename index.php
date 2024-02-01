@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Greetings from the other side -->
+    <!-- MAIN PAGE OF 3MonthJourney -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/MainPage.css" />
@@ -185,6 +185,21 @@
                         <p>Click again to close...</p>
                     </button>
                 </li>
+                <li>
+                    <button class="Node11" value="nd11">
+                        <p>Week 11</p>
+                        <p>
+                            <?php
+                                $err = 0;
+                                displayData(getDataByWeek($journeyDB, 11, $err));
+                                if($err == 1){
+                                    echo "No Data";
+                                }
+                            ?>
+                        </p>
+                        <p>Click again to close...</p>
+                    </button>
+                </li>
             </ol>
         </div>
     </div>
@@ -230,7 +245,7 @@
                 <li>
                     <a href="MiniApps" target="_blank">
                         <button class="miniGameBtn">
-                            MiniApps (WIP)
+                            MiniApps
                         </button>
                     </a>
                 </li>
