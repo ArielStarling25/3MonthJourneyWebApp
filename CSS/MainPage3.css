@@ -11,7 +11,7 @@
 
 .dataInsDiv.fadeIn {
   transition: 2.5s;
-  margin-top: 400px;
+  margin-top: 375px;
   opacity: 1 !important;
 }
 
@@ -37,7 +37,7 @@
   border-radius: 100px;
   border: 2px solid gray;
   box-shadow: 3px 3px 8px darkgrey;
-  font-family: "Times New Roman";
+  font-family: 'Times New Roman';
   font-size: medium;
   opacity: 0;
   transition: 0.3s;
