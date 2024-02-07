@@ -28,6 +28,7 @@ const nodes = [
   document.getElementsByClassName('Node9')[0],
   document.getElementsByClassName('Node10')[0],
   document.getElementsByClassName('Node11')[0],
+  document.getElementsByClassName('Node12')[0],
 ];
 
 //When the starting button is clicked
@@ -164,6 +165,15 @@ function contentGrowth(nd) {
         nodeState[10] = true;
       }
       break;
+    case 'nd12':
+      if (nodeState[11]) {
+        nodes[11].classList.remove('growContent');
+        nodeState[11] = false;
+      } else {
+        nodes[11].classList.add('growContent');
+        nodeState[11] = true;
+      }
+      break;
     default:
       this.innerHTML = '...';
     //Nth
@@ -223,5 +233,10 @@ document.getElementsByClassName('Node10')[0].onclick = function () {
 
 document.getElementsByClassName('Node11')[0].onclick = function () {
   console.log('Week 11 pressed');
+  contentGrowth(this.value);
+};
+
+document.getElementsByClassName('Node12')[0].onclick = function () {
+  console.log('Week 12 pressed');
   contentGrowth(this.value);
 };
