@@ -48,6 +48,7 @@
                     }
                 }
             ?>
+            <!-- This is the main form used to take in input from user -->
             <form id="beginPage" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
                 <label for="weekNumInput">Input Week Number: </label>
                 <input id="weekNumInput" name="weekNumInput" type="number" min="1" value="<?php echo $weekNum ?>" required><br><br>
