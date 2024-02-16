@@ -127,6 +127,7 @@
   height: 110px;
   width: 170px;
   background-color: lightgray;
+  transition-delay: 0s;
 }
 
 /* ------------- Node 1 ------------- */
